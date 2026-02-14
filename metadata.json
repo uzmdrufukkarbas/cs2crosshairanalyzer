@@ -1,0 +1,5 @@
+{
+  "name": "CS2 Crosshair Analyzer",
+  "description": "Upload a screenshot of a Counter-Strike 2 crosshair to instantly generate the console commands using Gemini AI.",
+  "requestFramePermissions": []
+}
