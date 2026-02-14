@@ -39,12 +39,13 @@ const App: React.FC = () => {
     try {
       const config = await analyzeCrosshairImage(base64);
       setState(prev => ({ ...prev, status: 'success', config }));
-    } catch (error) {
+    } catch (error: any) {
       console.error(error);
+      const msg = error?.message || 'Failed to analyze crosshair. Please try another image or ensure the crosshair is clearly visible.';
       setState(prev => ({ 
         ...prev, 
         status: 'error', 
-        errorMessage: 'Failed to analyze crosshair. Please try another image or ensure the crosshair is clearly visible.' 
+        errorMessage: msg 
       }));
     }
   };
