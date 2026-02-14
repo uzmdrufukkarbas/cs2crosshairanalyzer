@@ -56,7 +56,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-black text-slate-900 dark:text-slate-200 transition-colors duration-500 ease-in-out selection:bg-orange-500/30">
       {/* Navbar */}
-      <nav className="border-b border-slate-200 dark:border-white/10 bg-white/80 dark:bg-black/80 backdrop-blur-md sticky top-0 z-50 transition-colors duration-500">
+      <nav className="border-b border-slate-200 dark:border-white/10 bg-white/80 dark:bg-black backdrop-blur-md sticky top-0 z-50 transition-colors duration-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center gap-3">
@@ -164,7 +164,7 @@ const App: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white dark:bg-zinc-900 rounded-2xl p-8 border border-slate-200 dark:border-white/5 shadow-sm dark:shadow-none transition-colors duration-300"
+              className="bg-white dark:bg-black rounded-2xl p-8 border border-slate-200 dark:border-zinc-800 shadow-sm dark:shadow-none transition-colors duration-300"
             >
               <h3 className="font-bold text-slate-900 dark:text-slate-200 mb-4 flex items-center gap-2 text-lg">
                 <span className="flex items-center justify-center w-6 h-6 rounded-full bg-orange-100 dark:bg-orange-500/20 text-orange-600 dark:text-orange-500">
@@ -196,10 +196,10 @@ const App: React.FC = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="h-full flex flex-col items-center justify-center min-h-[500px] bg-slate-100 dark:bg-zinc-900 rounded-3xl border border-slate-200 dark:border-white/5"
+                    className="h-full flex flex-col items-center justify-center min-h-[500px] bg-slate-100 dark:bg-black rounded-3xl border border-slate-200 dark:border-zinc-800"
                  >
                     <div className="relative">
-                      <div className="w-20 h-20 border-4 border-slate-200 dark:border-zinc-700 border-t-orange-500 rounded-full animate-spin"></div>
+                      <div className="w-20 h-20 border-4 border-slate-200 dark:border-zinc-800 border-t-orange-500 rounded-full animate-spin"></div>
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
                       </div>
@@ -248,7 +248,7 @@ const App: React.FC = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="h-full flex flex-col items-center justify-center min-h-[500px] text-slate-400 dark:text-slate-600 border-2 border-dashed border-slate-200 dark:border-white/10 rounded-3xl bg-slate-50/50 dark:bg-transparent"
+                  className="h-full flex flex-col items-center justify-center min-h-[500px] text-slate-400 dark:text-slate-600 border-2 border-dashed border-slate-200 dark:border-zinc-800 rounded-3xl bg-slate-50/50 dark:bg-black"
                 >
                   <div className="w-24 h-24 mb-6 opacity-20 bg-[url('https://picsum.photos/200/200')] bg-cover rounded-full grayscale mix-blend-luminosity"></div>
                   <p className="text-xl font-medium text-slate-500 dark:text-slate-500">Waiting for upload...</p>
